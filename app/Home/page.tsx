@@ -18,9 +18,8 @@ const Page = () => {
           numberOfTopResults: "5",
         },
         headers: {
-          "X-RapidAPI-Key":
-            "17651ead7dmsh75f59bfbd837d19p1dca6ajsn337a76332559",
-          "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
+          "X-RapidAPI-Key": process.env.NEXT_MUSIC_API_KEY,
+          "X-RapidAPI-Host": process.env.NEXT_MUSIC_HOST,
         },
       };
       try {
